@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HomeWork 2 </title>
+    <script src="MEORE_DAVALEBA.js"> </script>
+</head>
+
+<body>
+    <script>
+        metoba_N1(5.3);
+        nakleboba_N2(8.9);
+        damrgvaleba_N3(7.4);
+        noli_erti_N5();
+        xuti_ormocdaati_N6(5, 50);
+        randomNumber_N7(1, 5);
+        mteli_ricxvi_N8(0, 23);
+        shemtxveviti_ricxvi_N9(10, 20);
+        parametrebi_N10(100, 125, 5);
+        dge_N11();
+        Tveebi_N16();
+
+
+        var randomImage = new Array();
+
+        randomImage[0] = "number_1.jpg";
+        randomImage[1] = "number_2.jpg";
+        randomImage[2] = "number_3.jpg";
+        randomImage[3] = "number_4.jpg";
+        randomImage[4] = "number_5.jpg";
+        randomImage[5] = "number_6.jpg";
+        randomImage[6] = "number_7.jpg";
+        randomImage[7] = "number_8.jpg";
+        randomImage[8] = "number_9.jpg";
+        randomImage[9] = "number_10.jpg";
+
+
+
+
+        function getRandomImage_N12() {
+            var number = Math.floor(Math.random() * 10);
+            document.write("<br>" + "<img src=" + randomImage[number] + " />");
+        }
+
+
+        getRandomImage_N12();
+
+        var fotoebi = new Array();
+        fotoebi[0] = "PHOTOS_1.jpg";
+        fotoebi[1] = "PHOTOS_2.jpg";
+        fotoebi[2] = "PHOTOS_3.jpg";
+        fotoebi[3] = "PHOTOS_4.jpg";
+        fotoebi[4] = "PHOTOS_5.jpg";
+        fotoebi[5] = "PHOTOS_6.jpg";
+        fotoebi[6] = "PHOTOS_7.jpg";
+        fotoebi[7] = "PHOTOS_8.jpg";
+        fotoebi[8] = "PHOTOS_9.jpg";
+        fotoebi[9] = "PHOTOS_10.jpg";
+        fotoebi[10] = "PHOTOS_11.jpg";
+        fotoebi[11] = "PHOTOS_12.jpg";
+        fotoebi[12] = "PHOTOS_13.jpg";
+        fotoebi[13] = "PHOTOS_14.jpg";
+        fotoebi[14] = "PHOTOS_15.jpg";
+        fotoebi[15] = "PHOTOS_16.jpg";
+        fotoebi[16] = "PHOTOS_17.jpg";
+        fotoebi[17] = "PHOTOS_18.jpg";
+        fotoebi[18] = "PHOTOS_19.jpg";
+        fotoebi[19] = "PHOTOS_20.jpg";
+
+
+
+
+
+        function Shemtxveviti_Foto_N13() {
+            var i = 0;
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            for (i == 0; i < 4; i++) {
+                document.write("4 შემთხვევითი ფოტო: " + "<img src=" + fotoebi[Math.floor(Math.random() * 20)] + " />")
+            };
+
+        }
+
+        Shemtxveviti_Foto_N13();
+
+
+        function Foto_KvirisDge_Ertad_N14_N15() {
+            var myArray = [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday",
+            ];
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+            var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+            var number = Math.floor(Math.random() * 10);
+            document.write("weekday: " + randomItem + " and picture: " + "<img src=" + randomImage[number] + " />");
+        }
+
+        Foto_KvirisDge_Ertad_N14_N15();
+
+        
+
+
+
+    
+    </script>
+
+</body>
+
+</html>
